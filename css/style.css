@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    max-width: 1024px;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+ul li{
+    padding: 1rem;
+    list-style: none;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid black
+}
+
+@media only screen and (max-width: 700px) {
+    .container{
+        width: 90%;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    body{
+        background: crimson;
+    }
+}
+  
+
+@media only screen and (max-width: 400px) {
+    body{
+        background: dodgerblue;
+    }
+}
